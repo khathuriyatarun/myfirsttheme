@@ -1,0 +1,44 @@
+aside {
+	background-color: #2f3f4c;
+	width: 265px;
+    height: 100vh;
+    
+	top: 0;
+	left: 0;
+	box-shadow: 1px 0px 0px 1px rgba(211,211,211,0.4);
+	z-index: 9;
+    transition: width .5s;
+}
+
+.logo_div {
+    padding: 15px 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.logo_div>span>a{
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    user-select: none;
+    color: #fff;
+}
+
+.aside_angle {
+    color: #494b74;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+}
+
+.aside_angle i:first-child {
+    transform: translateX(6px);
+    transition: .3s ease;
+    color: #3699ff60;
+}
+
+.aside_angle:hover i:first-child{
+    color: #3699ff!important;
+}
+
+.aside_angle i:last-child{
+    color: #494b74;
+}

@@ -1,0 +1,15 @@
+/* positions */
+.fixed{
+    position: fixed;
+}
+
+/* display */
+.d-inline-block{
+    display: inline-block;
+}
+
+
+/* */
+a{
+    text-decoration: none!important;
+}
