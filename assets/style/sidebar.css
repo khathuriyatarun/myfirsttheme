@@ -1,18 +1,19 @@
 aside {
 	background-color: #2f3f4c;
-	width: 265px;
+	width: 80px;
     height: 100vh;
-    
 	top: 0;
 	left: 0;
 	box-shadow: 1px 0px 0px 1px rgba(211,211,211,0.4);
 	z-index: 9;
-    transition: width .5s;
+    transition: width .1s;
 }
 
 .logo_div {
+    height: 54px;
     padding: 15px 20px;
     background-color: rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .logo_div>span>a{
@@ -20,25 +21,49 @@ aside {
     letter-spacing: 0.7px;
     user-select: none;
     color: #fff;
+    display: none;
 }
 
 .aside_angle {
-    color: #494b74;
+    color: #3699ff60;;
     font-size: 18px;
-    float: right;
     cursor: pointer;
-}
-
-.aside_angle i:first-child {
-    transform: translateX(6px);
     transition: .3s ease;
-    color: #3699ff60;
 }
 
-.aside_angle:hover i:first-child{
-    color: #3699ff!important;
+.aside_angle:hover {
+    color: #3699ff;
 }
 
-.aside_angle i:last-child{
-    color: #494b74;
+aside:hover {
+    width: 265px;
+}
+
+aside:hover .logo_div{
+    text-align: left;
+}
+
+aside:hover .logo_div>span>a{
+    display: unset;
+}
+
+aside:hover .aside_angle {
+    float: right;
+}
+
+/* expanded */
+aside.expanded{
+    width: 265px;
+}
+
+.expanded .logo_div{
+    text-align: left;
+}
+
+.expanded .logo_div>span>a{
+    display: unset;
+}
+
+.expanded .aside_angle {
+    float: right;
 }

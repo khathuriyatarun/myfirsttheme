@@ -1,0 +1,14 @@
+.template{
+    padding: 70px 0px 0px 80px;
+    min-height: 100vh;
+    transition: ease .3s;
+}
+
+.temp_wrapper{
+    padding: 15px;
+}
+
+/* expanded */
+.template.expanded{
+    padding-left: 265px;
+}
