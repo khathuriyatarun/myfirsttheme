@@ -11,9 +11,9 @@ $(document).ready(function(){
     //     $('aside').css('width', '265px');
     // });
 
-    $('.has_childs').click(function(e){
+    $('.has_childs>a').click(function(e){
         e.preventDefault();
-        $(this).toggleClass('child_expanded');
+        $(this).closest('.has_childs').toggleClass('child_expanded');
     });
 });
 
