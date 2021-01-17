@@ -1,0 +1,121 @@
+.login{
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.login h1{
+    font-weight: bold;
+    color: #2f3f4c;
+    letter-spacing: 0.7px;
+    user-select: none;
+}
+
+.logo_tag{
+    font-weight: bold;
+    color: #2f3f4c;
+    letter-spacing: 0.7px;
+    user-select: none;
+}
+
+.login_input{
+	width: 100%;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login_input input{
+	border-radius: 50px;
+	width: 100%;
+	max-width: 350px;
+	border: 1px solid #777;
+	padding: 12px 10px;
+	margin-bottom: 20px;
+	outline: none!important;
+}
+
+.login_input input::placeholder{
+	color: #777;
+}
+
+.login_input:first-child img {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 18px;
+    pointer-events: none;
+}
+
+.login_input:nth-child(2) img {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 21px;
+    pointer-events: none;
+}
+
+.login_bg_img{
+	background-image: url('../images/login/login_bg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.login_bg_img h1,
+.login_bg_img .logo_tag{
+    color: #fff;
+}
+
+.login_bg_color{
+	background-color: #2f3f4cb3;
+}
+
+.theme_login_btn{
+	border: none;
+	border-radius: 50px;
+	width: 100%;
+	padding: 13px!important;
+	max-width: 350px;
+	outline: none!important;
+	background-color: #2f3f4c;
+	cursor: pointer;
+}
+
+/* login_2 */
+.login_2 h1,
+.login_2 .logo_tag{
+    color: #2f3f4c!important;
+}
+
+.login_2 .login_bg_color {
+    display: flex;
+}
+
+.login_2 .card{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px){
+    .login_sm_bg{
+        background-image: url('../images/login/login_bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .login_sm_color{
+        background-color: #2f3f4cb3;
+    }
+
+    .login h1{
+        color: #fff;
+    }
+
+    .logo_tag{
+        color: #fff;
+    }
+}

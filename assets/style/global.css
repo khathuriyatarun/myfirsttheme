@@ -1,14 +1,24 @@
 /* positions */
-.fixed{
-    position: fixed;
-}
+.fixed{position: fixed;}
+.relative{position: relative;}
+.absolute{position: absolute;}
 
 /* display */
 .d-inline-block{
     display: inline-block;
 }
 
+@media (max-width: 768px){
+    .d_none_sm{display: none!important;}
+}
+
+/* height */
+.height_100vh{height: 100vh;}
+.height_inherit{height: inherit;}
+
 /* */
-a{
-    text-decoration: none!important;
+a{text-decoration: none!important;}
+.input_danger{
+	border-color: #dc3545!important;
+	color: #dc3545!important;
 }

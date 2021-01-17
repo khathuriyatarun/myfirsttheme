@@ -16,3 +16,28 @@ $(document).ready(function(){
         $(this).toggleClass('child_expanded');
     });
 });
+
+$('#login_btn').click(function(){
+    var username = $('#email').val();
+    var password = $('#password').val();
+
+    if(username == '' && password == ''){
+        $('#email').addClass('input_danger');
+        $('#password').addClass('input_danger');
+    } else if(username == ''){
+        $('#email').addClass('input_danger');
+    } else if(password == ''){
+        $('#email').addClass('input_danger');
+    } else {
+        window.location.href = "../dashboard.html";
+    }
+});
+
+$('#email').keyup(function(){
+    $(this).removeClass('input_danger');
+    $('#password').removeClass('input_danger');
+});
+
+$('#password').keyup(function(){
+    $(this).removeClass('input_danger');
+});
